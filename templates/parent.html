@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>parent</title>
+    {% endblock %}
+</head>
+<body>
+    <center>
+        <h1>first line in parent</h1>
+
+        {% block body_block %}
+        <h1>second line in parent</h1>
+        <h1>third line in parent</h1>
+        {% endblock %}
+
+        <!-- {% block body %}
+        {% endblock %} -->
+
+        <h1>fourth line in parent</h1>
+    </center>
+</body>
+</html>
